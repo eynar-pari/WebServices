@@ -10,9 +10,8 @@ public class StudentWebapp {
 	private static StudentService Service = new StudentService();
 	
 	@GET()
+    @Produces(MediaType.TEXT_PLAIN)
 	public String getList() {
 		return Service.list();
 	}
-
-
 }
